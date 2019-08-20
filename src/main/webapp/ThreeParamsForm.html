@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Servlets</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header role="banner" class="group">
+			<div id="logo"><a href="index.html">Argumentos</a></div>
+			<nav role="navigation">
+				<ul id="mainNav">
+					<li><a href="ThreeParamsForm.html">Argumentos</a></li>
+					<li><a href="ApplesAndOranges.xls">Planilha</a></li>
+					<li><a href="WrongDestination">Redirecionamento</a></li>
+					<li><a href="ShadowedText.html">Texto</a></li>
+					<li><a href="TelaDados.html">Entrada de dados</a></li>
+					<li><a href="Cookie.html">Cookies</a></li>
+					<li><a href="Bean.html">Java Beans</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="content" role="main">
+			<form id="form1" action="ThreeParams" method="get">
+				<fieldset>
+					<div>
+						<label for="param1">Primeiro Argumento</label>
+						<input id="param1" type="text" name="param1" required aria-required="true">
+					</div>
+					<div>
+						<label for="param2">Segundo Argumento</label>
+						<input id="param2" type="text" name="param2" required aria-required="true">
+					</div>
+					<div>
+						<label for="param3">Terceiro Argumento</label>
+						<input id="param3" type="text" name="param3" required aria-required="true">
+					</div>
+					<div>
+						<input type="submit" id="submit" value="Enviar">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Servlets</title>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Servlets</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+</head>
+<body>
+	<div id="wrapper">
+		<header role="banner" class="group">
+			<div id="logo"><a href="index.html">Utilizando Java Beans</a></div>
+			<nav role="navigation">
+				<ul id="mainNav">
+					<li><a href="ThreeParamsForm.html">Argumentos</a></li>
+					<li><a href="ApplesAndOranges.xls">Planilha</a></li>
+					<li><a href="WrongDestination">Redirecionamento</a></li>
+					<li><a href="ShadowedText.html">Texto</a></li>
+					<li><a href="TelaDados.html">Entrada de dados</a></li>
+					<li><a href="Cookie.html">Cookies</a></li>
+					<li><a href="Bean.html">Java Beans</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="content" role="main">
+			<h2 th:text="${msg.titulo}" />
+			<p th:text="${msg.texto}" />
+		</div>
+
+	</div>
+</body>
+</html>

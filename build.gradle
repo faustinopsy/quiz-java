@@ -1,0 +1,29 @@
+plugins {
+    id 'war'
+    id "org.akhikhl.gretty" version "2.0.0"
+}
+
+group 'ServletProjeto'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    maven {
+        url 'http://central.maven.org/maven2'
+    }
+}
+
+dependencies {
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
+    compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.2'
+    compile 'taglibs:standard:1.1.2'
+    compile 'org.thymeleaf:thymeleaf:3.0.11.RELEASE'
+    compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}

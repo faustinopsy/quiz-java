@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Servlets</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header role="banner" class="group">
+			<div id="logo"><a href="index.html">Texto</a></div>
+			<nav role="navigation">
+				<ul id="mainNav">
+					<li><a href="ThreeParamsForm.html">Argumentos</a></li>
+					<li><a href="ApplesAndOranges.xls">Planilha</a></li>
+					<li><a href="WrongDestination">Redirecionamento</a></li>
+					<li><a href="ShadowedText.html">Texto</a></li>
+					<li><a href="TelaDados.html">Entrada de dados</a></li>
+					<li><a href="Cookie.html">Cookies</a></li>
+					<li><a href="Bean.html">Java Beans</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="content" role="main">
+			<form id="form1" action="ShadowedText">
+				<fieldset>
+					<div>
+						<label for="message">Mensagem</label> 
+						<input id="message" type="text" name="message">
+					</div>
+					<div>
+						<label for="fontName">Nome da Font</label> 
+						<input id="fontName" type="text" name="fontName" value="Serif" 
+							required="required" aria-required="true">
+					</div>
+					<div>
+						<label for="fontSize">Tamanho da Font</label> 
+						<input id="fontSize" type="text" name="fontSize" value="90"
+							required="required" aria-required="true">
+					</div>
+					<div>
+						<input type="submit" id="submit" value="Construir a Imagem"> 
+						<input type="submit" id="submitL" value="Apresenta a lista de Fonts" name="showList">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
